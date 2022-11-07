@@ -1,0 +1,132 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    @media screen and (max-width: 800px) {
+      .left, .main, .right {
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+  }
+body{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility; 
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  margin: 5px;
+  padding: 2px;
+}
+
+header{
+  background: #fff;
+  padding: 10px;
+  text-transform: capitalize;
+  border-bottom: 2.5px solid #14141f;
+}
+
+h1{
+  font-size: 36px;
+}
+
+h2{
+  font-size: 30px;
+  margin: 10px;
+  padding: 5px;
+}
+h1, h2{
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+p{
+  font-size: 22px;
+}
+
+
+header{
+  background: #fff;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+
+header,h1,h2,p,footer{
+  text-align: center;
+}
+
+header,footer{
+  width: 100%;
+}
+
+
+#logo{
+  width: 25%;
+  height: auto;
+}
+
+.step{
+  margin: 25px 0 5px 0;
+  padding: 20px 0 10px 0;
+  font-weight: bold;
+  animation-name: usermas;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.icon{
+  margin: 20px auto;
+  padding: 20px 0 20px 0;
+  width: 150px;
+  height: 150px;
+  border: 18px solid #aaa;
+  border-radius: 50%;
+  border-top-color: #3399ff;
+  border-bottom-color: #66ffb3;
+  animation-name: iconspin;
+  animation-duration: 3s; 
+  animation-timing-function: ease-out;
+  animation-delay: 0s; 
+  animation-iteration-count: infinite; 
+}
+
+
+@keyframes iconspin{
+  0%{
+    transform: rotate(0deg);
+  }
+   
+  50%{
+    transform: rotate(360deg);
+    border-top-color: #9933ff;
+    border-bottom-color: #990099;
+  }
+    
+
+  100%{
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes usermas{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+main,footer{
+  margin: 10px 0; 
+  padding: 10px;
+}
+
+footer{
+   line-height: 1.6;
+   border-top: 2.5px solid #14141f;
+}
+/*coding pure CSS is awesome*/
